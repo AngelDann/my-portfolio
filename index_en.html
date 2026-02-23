@@ -5,10 +5,16 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Angel Lopez — AI Engineer (GenAI) specialized in Agentic Systems and RAG. Production experience with PydanticAI, OpenAI/Gemini, pgvector/Chroma, and deployment on Hetzner. ~100 companies adopted flows with 70% reduction in response time.">
+    <meta name="author" content="Angel Lopez">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Angel Lopez — AI Engineer (GenAI) | Agentic Systems & RAG">
+    <meta property="og:description" content="AI Engineer specialized in Agentic Systems and RAG. Production experience with PydanticAI, OpenAI/Gemini, pgvector/Chroma.">
+    <meta property="og:url" content="https://angeldan-lopez.github.io/">
 
-    <title>Portfolio - Data Engineer</title>
+    <title>Angel Lopez — AI Engineer (GenAI) | Agentic Systems & RAG</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -62,6 +68,237 @@
             transform: translateX(-50%); /* Centra los botones horizontalmente */
           }
         }
+      
+      /* Highlights Cards */
+      .highlights-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin: 30px 0;
+      }
+      .highlight-card {
+        background: #f8f9fa;
+        border-left: 4px solid #BD5D38;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .highlight-card strong {
+        color: #BD5D38;
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+      }
+      
+      /* Role Badge */
+      .role-badge {
+        display: inline-block;
+        background: #BD5D38;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      
+      /* Project Cards */
+      .project-card {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: box-shadow 0.3s ease;
+      }
+      .project-card:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+      .project-card h3 {
+        color: #BD5D38;
+        margin-bottom: 15px;
+      }
+      .stack-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 15px 0;
+      }
+      .chip {
+        background: #e9ecef;
+        color: #495057;
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 0.85rem;
+        display: inline-block;
+      }
+      .project-links {
+        margin-top: 15px;
+      }
+      .project-links a {
+        margin-right: 15px;
+        color: #BD5D38;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .project-links a:hover {
+        text-decoration: underline;
+      }
+      
+      /* Skills Chips */
+      .skills-category {
+        margin-bottom: 25px;
+      }
+      .skills-category h4 {
+        color: #495057;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .skills-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .skill-chip {
+        background: #BD5D38;
+        color: white;
+        padding: 6px 14px;
+        border-radius: 15px;
+        font-size: 0.9rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .skill-chip i {
+        font-size: 1rem;
+        line-height: 1;
+      }
+      
+      /* Download CV Button */
+      .cv-download-btn {
+        background: #BD5D38;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 15px;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+      }
+      .cv-download-btn:hover {
+        background: #495057;
+        color: white;
+        text-decoration: none;
+      }
+      
+      @media (max-width: 768px) {
+        .highlights-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ─── WispHub Case Study ─────────────────────────────── */
+      .wisphub-case {
+        border-left: 4px solid #BD5D38;
+        padding-left: 20px;
+      }
+      .wisphub-case .wh-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      /* Metric cards */
+      .metric-card {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-top: 3px solid #BD5D38;
+        border-radius: 8px;
+        padding: 16px 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+        height: 100%;
+      }
+      .metric-value {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #BD5D38;
+        line-height: 1.1;
+      }
+      .metric-label {
+        font-size: 0.78rem;
+        color: #6c757d;
+        margin-top: 5px;
+        line-height: 1.3;
+      }
+
+      /* Section sub-titles */
+      .wh-section-title {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        color: #BD5D38;
+        border-bottom: 1px solid #f0e8e4;
+        padding-bottom: 4px;
+        margin-bottom: 10px;
+      }
+
+      /* Gallery images */
+      .project-shot {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+        object-fit: cover;
+        display: block;
+      }
+      .project-shot-placeholder {
+        width: 100%;
+        background: #f0f0f0;
+        border: 2px dashed #ccc;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #aaa;
+        font-size: 0.8rem;
+        gap: 6px;
+        padding: 20px 10px;
+        min-height: 120px;
+      }
+      .project-shot-placeholder i {
+        font-size: 1.8rem;
+      }
+      .wh-caption {
+        font-size: 0.75rem;
+        color: #888;
+        margin-top: 5px;
+        font-style: italic;
+      }
+
+      /* Tech details accordion body */
+      .wh-tech-body {
+        background: #fafafa;
+        border: 1px solid #e9e9e9;
+        border-radius: 6px;
+      }
+      .wh-detail-title {
+        font-size: 0.82rem;
+        font-weight: 700;
+        color: #495057;
+        margin-bottom: 6px;
+      }
+
+      /* Confidential note */
+      .wh-confidential {
+        font-size: 0.78rem;
+        color: #aaa;
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
       </style>
 
   </head>
@@ -116,12 +353,14 @@
           <h1 class="mb-0">Angel
             <span class="text-primary">Lopez</span>
           </h1>
-          <div class="subheading mb-5">Mexico · 
+          <div class="role-badge">AI Engineer (GenAI) · Agentic Systems · RAG (pgvector/Chroma)</div>
+          <div class="subheading mb-4">Mexico · 
             <a href="mailto:agdaniel019@gmail.com">agdaniel019@gmail.com</a>
           </div>
-          <p class="mb-5">Data Engineer with an interest in machine learning. Experienced in artificial neural network modeling, web scraping, ETL processes, and automation. Knowledgeable in AWS (S3, EC2, IAM) with a B2 level of English proficiency.
-            During my experience, I developed tools for data extraction and analysis, including web scraping applications to identify potential clients, artificial neural network models for image classification, and datasets created through web scraping.
-            </p>          
+          <p class="mb-4">AI Engineer (GenAI-focused) with a Data Engineering background. Built production agentic systems with
+            tool/function-calling and RAG (OpenAI/Gemini embeddings, Postgres/pgvector, Chroma) shipped as APIs with Python,
+            Django, Docker, and Pydantic. Delivered automation reducing operational workload by up to 60% and supported
+            monetization via usage analytics and pricing redesign. AWS (EC2, S3, IAM). English B2.</p>      
             <ul class="list-inline list-social-icons mb-0">
               <li class="list-inline-item">
                 <a href="https://www.linkedin.com/in/angeldan-lopez/" target="_blank" rel="noopener noreferrer">
@@ -157,25 +396,177 @@
                 line-height: 1.75; /* Asegura que el texto esté centrado verticalmente */
               }
             </style>
-            
-          </ul>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
+
+          <!-- ══════════════════════════════════════════════════
+               WISPHUB — Mini Case Study
+               ══════════════════════════════════════════════════ -->
+          <div class="wisphub-case mb-5">
+
+            <!-- A) Header ─────────────────────────────────── -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start mb-3">
+              <div>
+                <h3 class="mb-0">AI Developer</h3>
+                <div class="subheading mb-2">
+                  <a href="#" target="_blank" rel="noopener noreferrer">WispHub</a>
+                </div>
+                <div class="wh-tags mb-2">
+                  <span class="chip">GenAI</span>
+                  <span class="chip">Agentic Systems</span>
+                  <span class="chip">RAG</span>
+                  <span class="chip">Production</span>
+                </div>
+              </div>
+              <div class="mt-2 mt-md-0 text-md-right">
+                <span class="text-primary">January 2025 – Present</span>
+              </div>
+            </div>
+
+            <!-- B) Context ─────────────────────────────────── -->
+            <p class="mb-4">Built AI functionalities inside the CRM for support and sales teams. Developed agents that execute tools (tool/function-calling) and use RAG to respond with context from the internal knowledge base, reducing response times and improving support quality at scale.</p>
+
+            <!-- C) Metrics ─────────────────────────────────── -->
+            <div class="row mb-4">
+              <div class="col-6 col-md-3 mb-3">
+                <div class="metric-card">
+                  <div class="metric-value">~100</div>
+                  <div class="metric-label">companies adopted self-serve AI features</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 mb-3">
+                <div class="metric-card">
+                  <div class="metric-value">70%</div>
+                  <div class="metric-label">reduction in first-response time</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 mb-3">
+                <div class="metric-card">
+                  <div class="metric-value">80%</div>
+                  <div class="metric-label">users reported process improvement (surveys)</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 mb-3">
+                <div class="metric-card">
+                  <div class="metric-value">~$5</div>
+                  <div class="metric-label">/ 2,000 msgs — cost model for pricing</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- D+E) What I Built / How I Did It + Gallery ── -->
+            <div class="row mb-3">
+
+              <!-- Left column: bullets -->
+              <div class="col-md-6 mb-4 mb-md-0">
+                <h5 class="wh-section-title">What I Built</h5>
+                <ul class="mb-4">
+                  <li>Agentic workflows with PydanticAI + tool/function-calling</li>
+                  <li>RAG pipeline with internal knowledge base (pgvector + PostgreSQL)</li>
+                  <li>Self-serve flow builder to configure agents without code</li>
+                  <li>Sales agents to automate first response and lead prioritization</li>
+                </ul>
+
+                <h5 class="wh-section-title">How I Did It</h5>
+                <ul>
+                  <li>Python + Django / FastAPI + Pydantic</li>
+                  <li>OpenAI / Gemini (embeddings and completions)</li>
+                  <li>Postgres/pgvector as vector store</li>
+                  <li>Linux (DigitalOcean) + Supervisor for deployment</li>
+                  <li>Structured output validation</li>
+                </ul>
+              </div>
+
+              <!-- Right column: gallery -->
+              <div class="col-md-6">
+
+                <!-- Main image: agent workflow architecture diagram -->
+                <figure class="mb-3">
+                  <a href="img/Agent%20Workflow%20for%20Message-2026-02-23-100725.png" target="_blank" rel="noopener noreferrer">
+                    <img src="img/Agent%20Workflow%20for%20Message-2026-02-23-100725.png"
+                         alt="AI agent workflow architecture diagram"
+                         class="project-shot">
+                  </a>
+                  <figcaption class="wh-caption">Agent architecture: message → RAG → decision → response / workflow</figcaption>
+                </figure>
+
+                <!-- Secondary thumbnails -->
+                <div class="row">
+                  <div class="col-6">
+                    <!-- WhatsApp chat with agent in action -->
+                    <figure class="mb-2">
+                      <a href="img/example.png" target="_blank" rel="noopener noreferrer">
+                        <img src="img/example.png"
+                             alt="Live AI agent interaction via WhatsApp"
+                             class="project-shot">
+                      </a>
+                      <figcaption class="wh-caption">Agent responding to customer via WhatsApp</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-6">
+                    <!-- Agent configuration UI in CRMinbox -->
+                    <figure class="mb-2">
+                      <a href="img/interface_ai.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="img/interface_ai.jpg"
+                             alt="Agent configuration interface in CRMinbox"
+                             class="project-shot">
+                      </a>
+                      <figcaption class="wh-caption">Self-serve agent configuration in CRMinbox</figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- G) Technical Details (collapsible) ─────────── -->
+            <div class="mb-3">
+              <button class="btn btn-outline-secondary btn-sm" type="button"
+                      data-toggle="collapse" data-target="#wispTechDetails"
+                      aria-expanded="false" aria-controls="wispTechDetails">
+                <i class="fas fa-chevron-down mr-1"></i> Technical Details
+              </button>
+              <div class="collapse mt-3" id="wispTechDetails">
+                <div class="card card-body wh-tech-body">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <p class="wh-detail-title"><i class="fas fa-chart-bar mr-1"></i>How we measured impact</p>
+                      <p class="small mb-0">Post-interaction satisfaction surveys, first-response times logged in the CRM, and flow adoption rate per company (internal platform data).</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <p class="wh-detail-title"><i class="fas fa-dollar-sign mr-1"></i>Cost considerations</p>
+                      <p class="small mb-0">~$5 USD per 2,000 messages estimated considering embedding + completion tokens (OpenAI/Gemini). Enables defining customer tiers and pricing decisions.</p>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="wh-detail-title"><i class="fas fa-server mr-1"></i>Deployment</p>
+                      <p class="small mb-0">Infrastructure on DigitalOcean (Linux), process management with Supervisor to keep workers active, Docker to isolate services and enable zero-downtime updates.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- H) Confidentiality note ────────────────────── -->
+            <p class="wh-confidential">
+              <i class="fas fa-lock mr-1"></i> Screenshots shown with anonymized or illustrative data.
+            </p>
+
+          </div>
+          <!-- ══════════════════════════════════════════════════ -->
       
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Database Assistant</h3>
+              <h3 class="mb-0">Database Assistant (Intern)</h3>
               <div class="subheading mb-3">
                 <a href="https://www.sspyt.cancun.gob.mx" target="_blank" rel="noopener noreferrer">Municipal Secretariat of Public Security and Transit</a>
               </div>
               <ul>
-                <li>Implemented ETL processes to clean and update the licensing database using DynamoDB in AWS.</li>
-                <li>Designed queries to identify active licenses in Cancún.</li>
-                <li>Automated data cleaning and report generation tasks.</li>
+                <li>Implemented ETL processes to clean and update the licensing database using DynamoDB in AWS</li>
+                <li>Automated data cleaning and report generation tasks</li>
               </ul>
               <ul class="list-inline list-icons">
                 <li class="list-inline-item text-center">
@@ -195,14 +586,13 @@
       
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Marketing Developer</h3>
+              <h3 class="mb-0">Marketing Developer (Intern)</h3>
               <div class="subheading mb-3">
                 <a href="https://www.zaviaerp.com" target="_blank" rel="noopener noreferrer">Zavia ERP</a>
               </div>
               <ul>
-                <li>Designed and fully developed an application to search for potential client information.</li>
-                <li>Created the user interface and planned the application's functionality.</li>
-                <li>Enabled retrieving client data for sales in seconds.</li>
+                <li>Designed and fully developed application to search for potential client information</li>
+                <li>Enabled retrieving client data for sales in seconds</li>
               </ul>
               <ul class="list-inline list-icons">
                 <li class="list-inline-item text-center">
@@ -230,14 +620,13 @@
       
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Marketing Developer Intern</h3>
+              <h3 class="mb-0">Marketing Developer (Intern)</h3>
               <div class="subheading mb-3">
                 <a href="https://www.zaviaerp.com" target="_blank" rel="noopener noreferrer">Zavia ERP</a>
               </div>
               <ul>
-                <li>Developed an application using web scraping techniques to extract hotel information.</li>
-                <li>Facilitated data storage and analysis in CSV and Excel formats.</li>
-                <li>Participated in the review and analysis of website functionality to ensure proper operation.</li>
+                <li>Developed application using web scraping techniques to extract hotel information</li>
+                <li>Facilitated data storage and analysis in CSV and Excel formats</li>
               </ul>
               <ul class="list-inline list-icons">
                 <li class="list-inline-item text-center">
@@ -288,6 +677,7 @@
               <div class="subheading mb-3">Bachelor's Degree in Engineering</div>
               <div>Data Engineering and Organizational Intelligence</div>
               <p>Final Grade: 9.23/10</p>
+              <p>Top GPA in the program</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">August 2020 - January 2025</span>
@@ -312,90 +702,61 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Projects</h2>
-          <ul>
+          
+          <div class="row">
             <!-- Project 1 -->
-            <li>
-              <h3>Plankton Classifier</h3>
-              <p><strong>Purpose:</strong> Reduce the time and complexity involved in plankton classification for university students, who previously took up to 5 hours to classify a single image. A convolutional neural network model was trained using open data to classify the students' images.</p>
-              <p><strong>Results:</strong></p>
-              <ul>
-                <li>Created a dataset of <strong>586,000 images</strong> with 72 plankton classifications.</li>
-                <li>Trained a model with fine-tuning of InceptionV3, achieving a <strong>95% weighted accuracy</strong> on the test dataset.</li>
-                <li>Developed a web application using <strong>Anvil</strong> and a chatbot integrated with the OpenAI API to answer questions and generate result summaries.</li>
-                <li>Compared the model with traditional methods: <strong>20% accuracy in 6 seconds</strong> vs. <strong>30% in 1 hour</strong>.</li>
-                <li>Students found the tool more intuitive and easier to use.</li>
-              </ul>
-              <p><strong>Tools and Technologies:</strong> TensorFlow, scikit-learn, Google Colab Pro, Selenium, Pandas, Hugging Face (for storage and API), Anvil (for the web application).</p>
-              <p><strong>Role in Project:</strong> Responsible for data collection and cleaning, architecture selection, modeling three proposals (single model, sequential, and hierarchical), and creating the API for predictions.</p>
-              <p><strong>Challenges and Solutions:</strong></p>
-              <ul>
-                <li><strong>Data imbalance:</strong> Investigated solutions such as undersampling, oversampling, class weight adjustments, and callbacks to improve dataset balance.</li>
-                <li><strong>Lack of specialized knowledge:</strong> Received ongoing guidance from a plankton expert to understand the data and laboratory challenges.</li>
-              </ul>
-              <p><strong>Period:</strong> June 2024 - November 2024 (6 months).</p>
-              <a href="https://github.com/AngelDann/CNN_Fitoplancton" target="_blank" rel="noopener noreferrer">
-                <strong>See more on GitHub</strong>
-              </a>
-              <div style="padding:50.31% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1033442636?h=874db1141e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Fitosense Clasificator Video demonstration"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            </li>
-
-            <br>
-      
+            <div class="col-md-6 mb-4">
+              <div class="project-card">
+                <h3>Plankton Classifier</h3>
+                <ul>
+                  <li>Reduced runtime from 5 hours to 6 seconds; National Winner ANUIES 2025</li>
+                </ul>
+                <div class="stack-chips">
+                  <span class="chip">Python</span>
+                  <span class="chip">TensorFlow</span>
+                  <span class="chip">InceptionV3</span>
+                  <span class="chip">Anvil</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/AngelDann/CNN_Fitoplancton" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="https://player.vimeo.com/video/1033442636" target="_blank" rel="noopener noreferrer">Demo</a>
+                </div>
+              </div>
+            </div>
+            
             <!-- Project 2 -->
-            <li>
-              <h3>WebScraperHotels</h3>
-              <p><strong>Purpose:</strong> Reduce the time and workload of the marketing department by automating the tedious process of manually collecting information about potential hotel clients.</p>
-              <p><strong>Results:</strong></p>
-              <ul>
-                <li>Automatically extracted relevant information such as name, address, phone number, URL, SSL, rating, and hotel prices from various platforms.</li>
-                <li>Reduced the time spent by the marketing manager from <strong>2 hours to less than 5 minutes</strong>.</li>
-              </ul>
-              <p><strong>Tools and Technologies:</strong> Python (libraries: requests, BeautifulSoup, pandas, tabulate), openxlsx for exporting data to Excel and CSV.</p>
-              <p><strong>Role in Project:</strong> Designed and implemented the entire solution, including <strong>UI design, data extraction and cleaning, and result storage</strong>. Also acted as a liaison to gather requirements from the marketing manager.</p>
-              <p><strong>Challenges and Solutions:</strong></p>
-              <ul>
-                <li><strong>Location dependency:</strong> Google Hotels' results varied based on the request location, so the application was made functional for both Windows and MacOS.</li>
-                <li><strong>Familiarization with new tools:</strong> Researched and tested unfamiliar tools to ensure project success.</li>
-                <li><strong>Usability:</strong> Tested the interface with non-technical users and implemented corrections based on their feedback.</li>
-              </ul>
-              <p><strong>Period:</strong> July 2023 - August 2023 (1.5 months).</p>
-              <a href="https://github.com/AngelDann/WebScraperHotels" target="_blank" rel="noopener noreferrer">
-                <strong>See more on GitHub</strong>
-              </a>
-              <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
-                <img src="img/auto_scrap.png" style="width: 100%; max-width: 400px; height: auto; object-fit: cover; border-radius: 10px;" alt="Image 1">
-                <img src="img/webscarper.png" style="width: 100%; max-width: 650px; height: auto; object-fit: cover; border-radius: 10px;" alt="Image 2">
+            <div class="col-md-6 mb-4">
+              <div class="project-card">
+                <h3>WebScraperHotels</h3>
+                <ul>
+                  <li>Reduced data collection from 2 hours to less than 5 minutes</li>
+                </ul>
+                <div class="stack-chips">
+                  <span class="chip">Python</span>
+                  <span class="chip">BeautifulSoup</span>
+                  <span class="chip">Pandas</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/AngelDann/WebScraperHotels" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
               </div>
-            </li>
-      
-            <br>
-      
-            <!-- Project 3 -->
-            <li>
-              <h3>Plankton Image Dataset Creation</h3>
-              <p><strong>Purpose:</strong> This project is part of the Plankton Classifier and was developed to complement the original WHOI dataset (2006-2014) with additional images from <strong>IFCB Dashboard</strong> and <strong>PlanktonNet</strong>. The goal was to enrich classifications and image diversity, making them closer to a laboratory context.</p>
-              <p><strong>Results:</strong></p>
-              <ul>
-                <li>Collected approximately <strong>600,000 images</strong> in 40 minutes, all organized by class.</li>
-                <li>Significantly reduced the time required compared to manually downloading and classifying daily images.</li>
-                <li>Enhanced the dataset with new classifications and image diversity.</li>
-              </ul>
-              <p><strong>Tools and Technologies:</strong> Selenium from Google Colab for image extraction, and pandas for storing, organizing, and concatenating results, grouping images into their respective classes.</p>
-              <p><strong>Role in Project:</strong> Responsible for data extraction, cleaning, and dataset creation.</p>
-              <p><strong>Challenges and Solutions:</strong></p>
-              <ul>
-                <li><strong>Classification with IFCB Dashboard:</strong> Required downloading a CSV file with assigned classifications and processing images published daily for two months. Sorting images by their classifications took longer than expected but was resolved with an optimized workflow using pandas.</li>
-              </ul>
-              <p><strong>Period:</strong> August 2024 (3 weeks).</p>
-              <a href="https://github.com/AngelDann/WebScraping_Fitplancton" target="_blank" rel="noopener noreferrer">
-                <strong>See more on GitHub</strong>
-              </a>
-              <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
-                <img src="img/grafica_dahsboard_cut.png" style="width: 100%; max-width: 400px; height: auto; object-fit: cover; border-radius: 10px;" alt="Image 1">
-                <img src="img/grafica_planktonnet_cut.png" style="width: 100%; max-width: 400px; height: auto; object-fit: cover; border-radius: 10px;" alt="Image 2">
+            </div>
+          
+          <!-- More Projects Accordion -->
+          <div class="mt-4">
+            <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#moreProjects" aria-expanded="false" aria-controls="moreProjects">
+              View more projects
+            </button>
+            <div class="collapse mt-3" id="moreProjects">
+              <div class="project-card">
+                <h3>Plankton Image Dataset Creation</h3>
+                <p>Complementary project to the Plankton Classifier. Collected ~600,000 images in 40 minutes from IFCB Dashboard and PlanktonNet, organized by class to enrich the original WHOI dataset (2006-2014).</p>
+                <div class="project-links">
+                  <a href="https://github.com/AngelDann/WebScraping_Fitplancton" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>      
 
@@ -403,8 +764,53 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
           <h2 class="mb-5">Skills</h2>
-      
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+
+          <div class="skills-category">
+            <h4>AI/GenAI</h4>
+            <div class="skills-chips">
+              <span class="skill-chip"><i class="fas fa-robot"></i> OpenAI</span>
+              <span class="skill-chip"><i class="fas fa-star"></i> Gemini</span>
+              <span class="skill-chip"><i class="fas fa-link"></i> LangChain</span>
+              <span class="skill-chip"><i class="fas fa-project-diagram"></i> LangGraph</span>
+              <span class="skill-chip"><i class="fas fa-check-square"></i> PydanticAI</span>
+              <span class="skill-chip"><i class="fas fa-search"></i> RAG</span>
+              <span class="skill-chip"><i class="devicon-postgresql-plain"></i> pgvector</span>
+              <span class="skill-chip"><i class="fas fa-database"></i> Chroma</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4>Backend</h4>
+            <div class="skills-chips">
+              <span class="skill-chip"><i class="devicon-python-plain"></i> Python</span>
+              <span class="skill-chip"><i class="devicon-django-plain"></i> Django</span>
+              <span class="skill-chip"><i class="devicon-fastapi-plain"></i> FastAPI</span>
+              <span class="skill-chip"><i class="fas fa-exchange-alt"></i> REST</span>
+              <span class="skill-chip"><i class="devicon-docker-plain"></i> Docker</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4>Data</h4>
+            <div class="skills-chips">
+              <span class="skill-chip"><i class="devicon-postgresql-plain"></i> Postgres</span>
+              <span class="skill-chip"><i class="devicon-mysql-original"></i> MySQL</span>
+              <span class="skill-chip"><i class="devicon-dynamodb-plain"></i> DynamoDB</span>
+              <span class="skill-chip"><i class="fas fa-random"></i> ETL/ELT</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h4>Infra</h4>
+            <div class="skills-chips">
+              <span class="skill-chip"><i class="devicon-linux-plain"></i> Linux</span>
+              <span class="skill-chip"><i class="fas fa-server"></i> Hetzner</span>
+              <span class="skill-chip"><i class="fas fa-cogs"></i> Supervisor</span>
+              <span class="skill-chip"><i class="devicon-amazonwebservices-plain-wordmark"></i> AWS (EC2/S3/IAM)</span>
+            </div>
+          </div>
+
+          <div class="subheading mb-3 mt-4">Programming Languages &amp; Tools</div>
           <ul class="list-inline list-icons">
             <li class="list-inline-item text-center">
               <i class="devicon-python-plain"></i>
@@ -415,8 +821,12 @@
               <p style="font-size: 20px;">TensorFlow</p>
             </li>
             <li class="list-inline-item text-center">
-              <i class="devicon-selenium-original"></i>
-              <p style="font-size: 20px;">Selenium</p>
+              <i class="devicon-fastapi-plain"></i>
+              <p style="font-size: 20px;">FastAPI</p>
+            </li>
+            <li class="list-inline-item text-center">
+              <i class="devicon-docker-plain"></i>
+              <p style="font-size: 20px;">Docker</p>
             </li>
             <li class="list-inline-item text-center">
               <i class="devicon-git-plain"></i>
@@ -427,10 +837,6 @@
               <p style="font-size: 20px;">Linux</p>
             </li>
             <li class="list-inline-item text-center">
-              <i class="devicon-azure-plain"></i>
-              <p style="font-size: 20px;">Azure</p>
-            </li>
-            <li class="list-inline-item text-center">
               <i class="devicon-amazonwebservices-plain-wordmark"></i>
               <p style="font-size: 20px;">AWS</p>
             </li>
@@ -439,41 +845,21 @@
               <p style="font-size: 20px;">MySQL</p>
             </li>
             <li class="list-inline-item text-center">
-              <i class="devicon-fastapi-plain"></i>
-              <p style="font-size: 20px;">FastAPI</p>
-            </li>
-            <li class="list-inline-item text-center">
-              <i class="devicon-java-plain"></i>
-              <p style="font-size: 20px;">Java</p>
-            </li>
-            <li class="list-inline-item text-center">
-              <i class="devicon-apacheairflow-plain"></i>
-              <p style="font-size: 20px;">Apache Airflow</p>
-            </li>
-            <li class="list-inline-item text-center">
               <i class="devicon-pandas-plain"></i>
               <p style="font-size: 20px;">Pandas</p>
             </li>
             <li class="list-inline-item text-center">
-              <i class="devicon-docker-plain"></i>
-              <p style="font-size: 20px;">Docker</p>
-            </li>         
-            <li class="list-inline-item text-center">      
-              <i class="devicon-matplotlib-plain"></i>
-              <p style="font-size: 20px;">Matplotlib</p>
-            </li>     
-            <li class="list-inline-item text-center">      
-              <i class="devicon-github-original"></i>  
+              <i class="devicon-github-original"></i>
               <p style="font-size: 20px;">Github</p>
-            </li>        
-            <li class="list-inline-item text-center">      
+            </li>
+            <li class="list-inline-item text-center">
               <i class="devicon-scikitlearn-plain"></i>
               <p style="font-size: 20px;">Scikit-learn</p>
             </li>
-            <li class="list-inline-item text-center">                   
+            <li class="list-inline-item text-center">
               <i class="devicon-numpy-plain"></i>
               <p style="font-size: 20px;">Numpy</p>
-            </li>             
+            </li>
           </ul>          
       
           <div class="subheading mb-3">Workflow</div>

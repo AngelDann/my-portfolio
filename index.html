@@ -299,6 +299,367 @@
         margin-top: 10px;
         margin-bottom: 0;
       }
+
+      /* ── Featured project cards (Cerasyn / Compey) ─────────── */
+      .project-card--feature {
+        background: linear-gradient(150deg, #fffdfb 0%, #f6f3f0 100%);
+        border: 1px solid #e6e0da;
+        border-top: 3px solid #BD5D38;
+        border-radius: 10px;
+        box-shadow: 0 4px 18px rgba(45, 35, 30, 0.07);
+        padding: 26px 26px 22px;
+        margin-bottom: 0;
+        transition: box-shadow 0.25s ease, transform 0.25s ease;
+      }
+      .project-card--feature:hover {
+        box-shadow: 0 10px 30px rgba(45, 35, 30, 0.12);
+        transform: translateY(-2px);
+      }
+      .project-feature-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.9fr);
+        gap: 24px;
+        align-items: start;
+      }
+      @media (max-width: 767px) {
+        .project-feature-grid { grid-template-columns: 1fr; }
+        .project-card--feature { padding: 18px 16px 16px; }
+      }
+      .project-feature-head {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding-bottom: 14px;
+        margin-bottom: 14px;
+        border-bottom: 1px solid rgba(0,0,0,0.07);
+      }
+      .project-feature-logo {
+        height: 40px;
+        width: auto;
+        max-width: 150px;
+        object-fit: contain;
+        flex-shrink: 0;
+      }
+      .project-feature-head h3 {
+        font-size: 1.15rem;
+        margin-bottom: 2px;
+        color: #2d3237;
+      }
+      .project-feature-tagline {
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: #BD5D38;
+        margin: 0;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      .project-feature-lead {
+        font-size: 0.94rem;
+        color: #3a4047;
+        line-height: 1.6;
+        margin-bottom: 0;
+      }
+      .project-feature-list {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+        font-size: 0.875rem;
+        line-height: 1.55;
+        color: #495057;
+      }
+      .project-feature-list li {
+        padding-left: 1.2em;
+        position: relative;
+      }
+      .project-feature-list li::before {
+        content: "›";
+        position: absolute;
+        left: 0;
+        color: #BD5D38;
+        font-weight: 700;
+        line-height: 1.55;
+      }
+      .project-feature-list li + li { margin-top: 7px; }
+      .project-award-note,
+      .project-trust-note {
+        font-size: 0.8rem;
+        color: #6c757d;
+        margin-bottom: 0;
+        line-height: 1.45;
+        padding: 8px 10px;
+        background: rgba(0,0,0,0.03);
+        border-radius: 5px;
+        border-left: 3px solid #BD5D38;
+      }
+      .project-award-note i,
+      .project-trust-note i {
+        color: #BD5D38;
+        margin-right: 5px;
+      }
+      /* Project CTA links — pill style */
+      .project-card--feature .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 16px;
+      }
+      .project-card--feature .project-links a {
+        display: inline-block;
+        padding: 5px 16px;
+        border-radius: 20px;
+        font-size: 0.82rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease, color 0.2s ease;
+        margin-right: 0;
+      }
+      .project-card--feature .project-links a:first-child {
+        background: #BD5D38;
+        color: #fff;
+      }
+      .project-card--feature .project-links a:first-child:hover {
+        background: #9e4c2e;
+        color: #fff;
+      }
+      .project-card--feature .project-links a:not(:first-child) {
+        background: transparent;
+        color: #BD5D38;
+        border: 1.5px solid #BD5D38;
+      }
+      .project-card--feature .project-links a:not(:first-child):hover {
+        background: #BD5D38;
+        color: #fff;
+      }
+      /* Video panel */
+      .project-feature-media {
+        border-radius: 8px;
+        overflow: hidden;
+        background: #141414;
+        border: 1px solid #2a2a2a;
+        box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
+      }
+      .project-video-label {
+        display: block;
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: rgba(255,255,255,0.5);
+        padding: 8px 12px 4px;
+      }
+      .project-demo-video {
+        display: block;
+        width: 100%;
+        max-height: min(50vh, 310px);
+        object-fit: contain;
+        vertical-align: bottom;
+        background: #141414;
+      }
+
+      /* ── Compey brand variant (purple) ──────────────────────── */
+      .project-card--feature-compey {
+        background: linear-gradient(150deg, #fdfcff 0%, #f1eef9 100%);
+        border-color: #ddd6f5;
+        border-top-color: #5b3ead;
+      }
+      .project-card--feature-compey:hover {
+        box-shadow: 0 10px 30px rgba(75, 50, 140, 0.11);
+      }
+      .project-card--feature-compey .project-feature-head { border-bottom-color: rgba(91,62,173,0.12); }
+      .project-card--feature-compey .project-feature-tagline { color: #5b3ead; }
+      .project-card--feature-compey .project-feature-list li::before { color: #5b3ead; }
+      .project-card--feature-compey .project-award-note,
+      .project-card--feature-compey .project-trust-note { border-left-color: #5b3ead; }
+      .project-card--feature-compey .project-award-note i,
+      .project-card--feature-compey .project-trust-note i { color: #5b3ead; }
+      .project-card--feature-compey .project-links a:first-child {
+        background: #5b3ead;
+      }
+      .project-card--feature-compey .project-links a:first-child:hover { background: #4a319a; }
+      .project-card--feature-compey .project-links a:not(:first-child) {
+        color: #5b3ead;
+        border-color: #5b3ead;
+      }
+      .project-card--feature-compey .project-links a:not(:first-child):hover {
+        background: #5b3ead;
+        color: #fff;
+      }
+
+      /* ── Small project cards — accent top bar ────────────────── */
+      .project-card {
+        border-top: 3px solid #e0e0e0;
+        transition: border-top-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+      }
+      .project-card:hover {
+        border-top-color: #BD5D38;
+        transform: translateY(-2px);
+      }
+
+      /* ── "Ver más" button — brand color ─────────────────────── */
+      .btn-projects-more {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 7px 20px;
+        border: 1.5px solid #BD5D38;
+        border-radius: 20px;
+        background: transparent;
+        color: #BD5D38;
+        font-size: 0.85rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s ease, color 0.2s ease;
+      }
+      .btn-projects-more:hover {
+        background: #BD5D38;
+        color: #fff;
+      }
+
+      /* ── Small card image gallery ───────────────────────────── */
+      .card-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+        margin: 12px 0 10px;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      .card-gallery--single { grid-template-columns: 1fr; }
+      .card-gallery img,
+      .card-gallery .card-gallery-gif {
+        width: 100%;
+        height: 130px;
+        object-fit: cover;
+        display: block;
+        border-radius: 4px;
+        border: 1px solid #eee;
+        transition: opacity 0.2s ease;
+      }
+      .card-gallery img:hover,
+      .card-gallery .card-gallery-gif:hover { opacity: 0.88; }
+      .card-gallery .card-gallery-gif {
+        height: 130px;
+        object-fit: cover;
+      }
+      figcaption.card-img-cap {
+        font-size: 0.68rem;
+        color: #aaa;
+        text-align: center;
+        margin-top: 2px;
+        font-style: italic;
+      }
+      .project-gallery-thumb {
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .card-gallery-fs {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        border: none;
+        border-radius: 6px;
+        background: rgba(0,0,0,0.55);
+        color: #fff;
+        font-size: 0.75rem;
+        line-height: 1;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s ease, transform 0.15s ease;
+        z-index: 2;
+      }
+      .card-gallery-fs:hover,
+      .card-gallery-fs:focus {
+        background: #BD5D38;
+        color: #fff;
+        outline: none;
+      }
+      .card-gallery-fs:focus {
+        box-shadow: 0 0 0 2px rgba(189, 93, 56, 0.45);
+      }
+
+      /* Lightbox (pantalla completa visual) — proyectos académicos */
+      .project-img-lightbox {
+        position: fixed;
+        inset: 0;
+        z-index: 3000;
+        background: rgba(10, 10, 12, 0.94);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 16px 24px;
+        cursor: zoom-out;
+      }
+      .project-img-lightbox[hidden] {
+        display: none !important;
+      }
+      .project-img-lightbox__figure {
+        margin: 0;
+        max-width: min(96vw, 1400px);
+        max-height: 92vh;
+        cursor: default;
+      }
+      .project-img-lightbox__img {
+        display: block;
+        max-width: min(96vw, 1400px);
+        max-height: calc(92vh - 36px);
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        border-radius: 6px;
+        box-shadow: 0 8px 40px rgba(0,0,0,0.45);
+      }
+      .project-img-lightbox__caption {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 0.85rem;
+        color: rgba(255,255,255,0.75);
+      }
+      .project-img-lightbox__hint {
+        position: absolute;
+        bottom: 14px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.72rem;
+        color: rgba(255,255,255,0.45);
+        pointer-events: none;
+      }
+      .project-img-lightbox__close {
+        position: absolute;
+        top: 12px;
+        right: 14px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.12);
+        color: #fff;
+        font-size: 1.5rem;
+        line-height: 1;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        z-index: 3001;
+      }
+      .project-img-lightbox__close:hover,
+      .project-img-lightbox__close:focus {
+        background: #BD5D38;
+        outline: none;
+      }
+
+      /* ── Featured ↔ small grid separator ────────────────────── */
+      .projects-secondary-label {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: #adb5bd;
+        margin-bottom: 14px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #f0ece8;
+      }
     </style>
 
   </head>
@@ -327,13 +688,13 @@
                 <a class="nav-link js-scroll-trigger" href="#about">Acerca de mi</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#interests">Proyectos</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#experience">Experiencia</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#education">Educación</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#interests">Proyectos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
@@ -393,6 +754,300 @@
                 line-height: 1.75; /* Asegura que el texto esté centrado verticalmente */
               }
             </style>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Proyectos</h2>
+
+          <div class="row mb-2">
+            <div class="col-12">
+              <article class="project-card project-card--feature">
+                <div class="project-feature-grid">
+                  <div class="project-feature-main">
+                    <div class="project-feature-head">
+                      <img src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/cerasyn_logo_black.png"
+                           width="160" height="44" class="project-feature-logo" alt="Cerasyn" loading="lazy">
+                      <div>
+                        <h3 class="mb-0">Cerasyn</h3>
+                        <p class="project-feature-tagline mb-0">Clasificación inteligente de fitoplancton</p>
+                      </div>
+                    </div>
+                    <p class="project-feature-lead mb-0">SaaS para estudiantes, investigadores y laboratorios: digitaliza sesiones de microscopio, ejecuta inferencia con CNN (InceptionV3 vía API) en background y combina predicción automática con validación humana y trazabilidad.</p>
+                    <ul class="project-feature-list mt-3 mb-0">
+                      <li><strong>Producto + ML ops:</strong> carga masiva (JPEG/PNG/WebP), colas Celery + Redis, hasta 10 predicciones con confianza por imagen, alertas de toxicidad y estados de revisión.</li>
+                      <li><strong>IA conversacional:</strong> asistente &quot;Fito&quot; en el espacio de trabajo (pydantic-ai + OpenAI): consulta sesiones e imágenes en lenguaje natural según rol, con presupuesto mensual por plan.</li>
+                      <li><strong>Negocio e infra:</strong> equipos, roles, planes y facturación con Stripe; despliegue en contenedores Docker sobre Hetzner, orquestado con Dokploy; Django Channels (ASGI) y PostgreSQL; medios e imágenes en <strong>Cloudflare R2</strong> (bucket compatible S3).</li>
+                    </ul>
+                    <p class="project-award-note mt-3 mb-0">
+                      <i class="fas fa-award" aria-hidden="true"></i>
+                      Ganador del concurso nacional ANUIES 2024 (México) por innovación e impacto educativo en biología y ciencias ambientales.
+                    </p>
+                    <div class="stack-chips">
+                      <span class="chip">Django 6</span>
+                      <span class="chip">Celery</span>
+                      <span class="chip">Redis</span>
+                      <span class="chip">PostgreSQL</span>
+                      <span class="chip">Channels / ASGI</span>
+                      <span class="chip">HTMX</span>
+                      <span class="chip">pydantic-ai</span>
+                      <span class="chip">Stripe</span>
+                      <span class="chip">Docker</span>
+                      <span class="chip">Dokploy</span>
+                      <span class="chip">Hetzner</span>
+                      <span class="chip">Cloudflare R2</span>
+                    </div>
+                    <div class="project-links">
+                      <a href="https://cerasyn.net" target="_blank" rel="noopener noreferrer">Sitio</a>
+                      <a href="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/demo_cerasyn.mp4" target="_blank" rel="noopener noreferrer">Abrir demo (video)</a>
+                    </div>
+                  </div>
+                  <div class="project-feature-media">
+                    <span class="project-video-label">Demo en video</span>
+                    <video class="project-demo-video" controls playsinline preload="metadata"
+                           aria-label="Demostración de la plataforma Cerasyn">
+                      <source src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/demo_cerasyn.mp4" type="video/mp4">
+                      Tu navegador no reproduce video embebido; usa el enlace &quot;Abrir demo&quot;.
+                    </video>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-12">
+              <article class="project-card project-card--feature project-card--feature-compey">
+                <div class="project-feature-grid">
+                  <div class="project-feature-main">
+                    <div class="project-feature-head">
+                      <img src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/compey_logo_vector_purple.png"
+                           width="180" height="48" class="project-feature-logo" alt="Compey" loading="lazy">
+                      <div>
+                        <h3 class="mb-0">Compey</h3>
+                        <p class="project-feature-tagline mb-0">Verificación SPEI automatizada</p>
+                      </div>
+                    </div>
+                    <p class="project-feature-lead mb-0">Plataforma SaaS para cobranza: convierte recibos SPEI (imagen) en decisiones trazables — OCR estructurado y cruce con el <strong>CEP de Banxico</strong> para reducir captura manual, folios perdidos y acreditaciones con evidencia dudosa.</p>
+                    <ul class="project-feature-list mt-3 mb-0">
+                      <li><strong>OCR + lotes:</strong> JPG/PNG; extracción de monto, fecha, banco, cuenta y clave de rastreo; cargas masivas con procesamiento asíncrono (Celery + Redis) y detección de duplicados antes de acreditar.</li>
+                      <li><strong>Validación oficial:</strong> consulta al CEP; estados claros (p. ej. verificado, sospechoso, rechazado, pendiente de revisión). Compey <strong>no sustituye</strong> a Banxico: automatiza lectura y comparación contra la fuente pública; la disponibilidad del CEP depende de Banxico.</li>
+                      <li><strong>Operación:</strong> dashboard con pendientes y filtros, bitácora por decisión, huella auditable; Stripe; visión/OCR con OpenAI; PostgreSQL, Django + HTMX, Channels donde aplica; despliegue <strong>Docker + Dokploy</strong> en <strong>Hetzner</strong>; comprobantes y adjuntos en <strong>Cloudflare R2</strong> (bucket compatible S3).</li>
+                    </ul>
+                    <p class="project-trust-note mt-3 mb-0">
+                      <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                      Contexto mexicano (SPEI, comprobantes locales); revisión humana en casos sospechosos; FAQ explícito sobre límites respecto al CEP.
+                    </p>
+                    <div class="stack-chips">
+                      <span class="chip">Django 6</span>
+                      <span class="chip">Celery</span>
+                      <span class="chip">Redis</span>
+                      <span class="chip">PostgreSQL</span>
+                      <span class="chip">HTMX</span>
+                      <span class="chip">OpenAI</span>
+                      <span class="chip">CEP Banxico</span>
+                      <span class="chip">Stripe</span>
+                      <span class="chip">Docker</span>
+                      <span class="chip">Dokploy</span>
+                      <span class="chip">Hetzner</span>
+                      <span class="chip">Cloudflare R2</span>
+                    </div>
+                    <div class="project-links">
+                      <a href="https://compey.net" target="_blank" rel="noopener noreferrer">Sitio</a>
+                      <a href="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/demo_compey.mp4" target="_blank" rel="noopener noreferrer">Abrir demo (video)</a>
+                    </div>
+                  </div>
+                  <div class="project-feature-media">
+                    <span class="project-video-label">Demo en video</span>
+                    <video class="project-demo-video" controls playsinline preload="metadata"
+                           aria-label="Demostración de la plataforma Compey">
+                      <source src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/demo_compey.mp4" type="video/mp4">
+                      Tu navegador no reproduce video embebido; usa el enlace &quot;Abrir demo&quot;.
+                    </video>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+          <p class="projects-secondary-label">Proyectos académicos</p>
+          <div class="row">
+            <!-- Proyecto 1 -->
+            <div class="col-md-6 mb-4">
+              <div class="project-card">
+                <h3>Clasificador de Fitoplancton</h3>
+                <p style="font-size:0.82rem;color:#6c757d;margin-bottom:10px;font-style:italic;">Proyecto de titulación · CNN · Transfer Learning</p>
+                <div class="card-gallery">
+                  <figure class="mb-0 project-gallery-figure">
+                    <div class="project-gallery-thumb">
+                      <a href="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/389467272-4e063619-80a6-446c-9bda-1c938ccab09b.gif" target="_blank" rel="noopener noreferrer">
+                        <img src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/389467272-4e063619-80a6-446c-9bda-1c938ccab09b.gif"
+                             alt="Demo de la plataforma Anvil clasificando fitoplancton" loading="lazy">
+                      </a>
+                      <button type="button" class="card-gallery-fs"
+                              data-lightbox-src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/389467272-4e063619-80a6-446c-9bda-1c938ccab09b.gif"
+                              data-lightbox-alt="Demo de la plataforma Anvil clasificando fitoplancton"
+                              data-lightbox-caption="Plataforma en acción (Anvil)"
+                              title="Ver en pantalla completa" aria-label="Ver en pantalla completa">
+                        <i class="fas fa-expand-alt" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <figcaption class="card-img-cap">Plataforma en acción (Anvil)</figcaption>
+                  </figure>
+                  <figure class="mb-0 project-gallery-figure">
+                    <div class="project-gallery-thumb">
+                      <a href="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/389468943-591ee100-bbae-4b9e-845e-bd77717a4dea.png" target="_blank" rel="noopener noreferrer">
+                        <img src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/389468943-591ee100-bbae-4b9e-845e-bd77717a4dea.png"
+                             alt="Matriz de resultados de la CNN" loading="lazy">
+                      </a>
+                      <button type="button" class="card-gallery-fs"
+                              data-lightbox-src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/389468943-591ee100-bbae-4b9e-845e-bd77717a4dea.png"
+                              data-lightbox-alt="Matriz de resultados de la CNN"
+                              data-lightbox-caption="Matriz de resultados CNN"
+                              title="Ver en pantalla completa" aria-label="Ver en pantalla completa">
+                        <i class="fas fa-expand-alt" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <figcaption class="card-img-cap">Matriz de resultados CNN</figcaption>
+                  </figure>
+                </div>
+                <ul>
+                  <li>Modelo CNN especializado via fine-tuning de InceptionV3, entrenado con ~580,000 imágenes de microscopio para clasificar géneros de fitoplancton.</li>
+                  <li>Redujo el tiempo de clasificación manual de horas a segundos, permitiendo que estudiantes universitarios procesen lotes completos en Anvil sin conocimientos de ML.</li>
+                  <li><strong>Ganador nacional ANUIES 2025</strong> — presentado como prototipo ante el concurso nacional universitario.</li>
+                </ul>
+                <div class="stack-chips">
+                  <span class="chip">Python</span>
+                  <span class="chip">TensorFlow</span>
+                  <span class="chip">Keras</span>
+                  <span class="chip">InceptionV3</span>
+                  <span class="chip">Anvil</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/AngelDann/CNN_Fitoplankton" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="https://player.vimeo.com/video/1033442636" target="_blank" rel="noopener noreferrer">Demo</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Proyecto 2: dataset (complemento del clasificador) -->
+            <div class="col-md-6 mb-4">
+              <div class="project-card">
+                <h3>Dataset de Imágenes de Fitoplancton</h3>
+                <p style="font-size:0.82rem;color:#6c757d;margin-bottom:10px;font-style:italic;">Pipeline de datos · Web Scraping con Selenium · Dataset ML</p>
+                <div class="card-gallery">
+                  <figure class="mb-0 project-gallery-figure">
+                    <div class="project-gallery-thumb">
+                      <a href="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/389468405-9628cf78-475b-4f8b-ae89-8588d05f8e7d.png" target="_blank" rel="noopener noreferrer">
+                        <img src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/389468405-9628cf78-475b-4f8b-ae89-8588d05f8e7d.png"
+                             alt="Exploración del dataset de fitoplancton" loading="lazy">
+                      </a>
+                      <button type="button" class="card-gallery-fs"
+                              data-lightbox-src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/389468405-9628cf78-475b-4f8b-ae89-8588d05f8e7d.png"
+                              data-lightbox-alt="Exploración del dataset de fitoplancton"
+                              data-lightbox-caption="Dataset organizado por género"
+                              title="Ver en pantalla completa" aria-label="Ver en pantalla completa">
+                        <i class="fas fa-expand-alt" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <figcaption class="card-img-cap">Dataset organizado por género</figcaption>
+                  </figure>
+                  <figure class="mb-0 project-gallery-figure">
+                    <div class="project-gallery-thumb">
+                      <a href="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/grtafico_webscarping_resultados.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/grtafico_webscarping_resultados.jpg"
+                             alt="Resultados del web scraping y consolidación en CSV" loading="lazy">
+                      </a>
+                      <button type="button" class="card-gallery-fs"
+                              data-lightbox-src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/grtafico_webscarping_resultados.jpg"
+                              data-lightbox-alt="Resultados del web scraping y consolidación en CSV"
+                              data-lightbox-caption="Resultados del scraping (CSV)"
+                              title="Ver en pantalla completa" aria-label="Ver en pantalla completa">
+                        <i class="fas fa-expand-alt" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <figcaption class="card-img-cap">Resultados del scraping (CSV)</figcaption>
+                  </figure>
+                </div>
+                <ul>
+                  <li>Bot con Selenium para recolectar ~600,000 imágenes desde <strong>IFCB Dashboard</strong> y <strong>PlanktonNet</strong>, organizadas por género taxonómico en ~40 minutos — trabajo que manualmente tomaría días.</li>
+                  <li>Dataset creado específicamente para entrenar el modelo del Clasificador de Fitoplancton; sin este pipeline de datos el proyecto no habría sido viable.</li>
+                </ul>
+                <div class="stack-chips">
+                  <span class="chip">Python</span>
+                  <span class="chip">Selenium</span>
+                  <span class="chip">Google Colab</span>
+                  <span class="chip">Requests</span>
+                  <span class="chip">Pandas</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/AngelDann/WebScraping_Fitplancton" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- More Projects Accordion -->
+          <div class="mt-3">
+            <button class="btn-projects-more" type="button" data-toggle="collapse" data-target="#moreProjects" aria-expanded="false" aria-controls="moreProjects">
+              <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i> Ver más proyectos
+            </button>
+            <div class="collapse mt-3" id="moreProjects">
+              <div class="project-card">
+                <h3>WebScraperHotels</h3>
+                <p style="font-size:0.82rem;color:#6c757d;margin-bottom:10px;font-style:italic;">Herramienta de prospección · Web Scraping · Terminal</p>
+                <div class="card-gallery">
+                  <figure class="mb-0 project-gallery-figure">
+                    <div class="project-gallery-thumb">
+                      <a href="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/resultado_hotel.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/resultado_hotel.jpg"
+                             alt="Resultado de búsqueda de información de un hotel" loading="lazy">
+                      </a>
+                      <button type="button" class="card-gallery-fs"
+                              data-lightbox-src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/resultado_hotel.jpg"
+                              data-lightbox-alt="Resultado de búsqueda de información de un hotel"
+                              data-lightbox-caption="Búsqueda de hotel individual"
+                              title="Ver en pantalla completa" aria-label="Ver en pantalla completa">
+                        <i class="fas fa-expand-alt" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <figcaption class="card-img-cap">Búsqueda de hotel individual</figcaption>
+                  </figure>
+                  <figure class="mb-0 project-gallery-figure">
+                    <div class="project-gallery-thumb">
+                      <a href="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/proceso_extraccion_masiva.png" target="_blank" rel="noopener noreferrer">
+                        <img src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/proceso_extraccion_masiva.png"
+                             alt="Extracción masiva de datos de hoteles" loading="lazy">
+                      </a>
+                      <button type="button" class="card-gallery-fs"
+                              data-lightbox-src="https://pub-a432c611de1c4fd8a85a13fe62aadb8c.r2.dev/proceso_extraccion_masiva.png"
+                              data-lightbox-alt="Extracción masiva de datos de hoteles"
+                              data-lightbox-caption="Extracción masiva en terminal"
+                              title="Ver en pantalla completa" aria-label="Ver en pantalla completa">
+                        <i class="fas fa-expand-alt" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                    <figcaption class="card-img-cap">Extracción masiva en terminal</figcaption>
+                  </figure>
+                </div>
+                <ul>
+                  <li>Sistema de terminal para extraer datos de hoteles de múltiples directorios web: nombre, teléfono, dirección y contacto, consolidados en CSV/Excel automáticamente.</li>
+                  <li>Eliminó la búsqueda y captura manual sitio por sitio, reduciendo el tiempo de prospección de clientes de ~2 horas a menos de 5 minutos.</li>
+                </ul>
+                <div class="stack-chips">
+                  <span class="chip">Python</span>
+                  <span class="chip">BeautifulSoup</span>
+                  <span class="chip">Pandas</span>
+                  <span class="chip">Requests</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/AngelDann/WebScraperHotels" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -693,68 +1348,6 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Proyectos</h2>
-          
-          <div class="row">
-            <!-- Proyecto 1 -->
-            <div class="col-md-6 mb-4">
-              <div class="project-card">
-                <h3>Clasificador de Fitoplancton</h3>
-                <ul>
-                  <li>Reducción de tiempo de ejecución de 5 horas a 6 segundos; Ganador Nacional ANUIES 2025</li>
-                </ul>
-                <div class="stack-chips">
-                  <span class="chip">Python</span>
-                  <span class="chip">TensorFlow</span>
-                  <span class="chip">InceptionV3</span>
-                  <span class="chip">Anvil</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://github.com/AngelDann/CNN_Fitoplankton" target="_blank" rel="noopener noreferrer">GitHub</a>
-                  <a href="https://player.vimeo.com/video/1033442636" target="_blank" rel="noopener noreferrer">Demo</a>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Proyecto 2 -->
-            <div class="col-md-6 mb-4">
-              <div class="project-card">
-                <h3>WebScraperHotels</h3>
-                <ul>
-                  <li>Reducción de recolección de datos de 2 horas a menos de 5 minutos</li>
-                </ul>
-                <div class="stack-chips">
-                  <span class="chip">Python</span>
-                  <span class="chip">BeautifulSoup</span>
-                  <span class="chip">Pandas</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://github.com/AngelDann/WebScraperHotels" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
-              </div>
-            </div>
-            
-          
-          <!-- More Projects Accordion -->
-          <div class="mt-4">
-            <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#moreProjects" aria-expanded="false" aria-controls="moreProjects">
-              Ver más proyectos
-            </button>
-            <div class="collapse mt-3" id="moreProjects">
-              <div class="project-card">
-                <h3>Creación de Conjuntos de Imágenes de Fitoplancton</h3>
-                <p>Proyecto complementario del Clasificador de Fitoplancton. Recolección de ~600,000 imágenes en 40 minutos desde IFCB Dashboard y PlanktonNet, organizadas por clase para enriquecer el dataset original de WHOI (2006-2014).</p>
-                <div class="project-links">
-                  <a href="https://github.com/AngelDann/WebScraping_Fitplancton" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
@@ -927,6 +1520,16 @@
 
     </div>
 
+    <!-- Lightbox para imágenes de proyectos académicos -->
+    <div id="project-img-lightbox" class="project-img-lightbox" hidden role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen">
+      <button type="button" class="project-img-lightbox__close" aria-label="Cerrar">&times;</button>
+      <figure class="project-img-lightbox__figure" onclick="event.stopPropagation()">
+        <img class="project-img-lightbox__img" src="" alt="">
+        <figcaption class="project-img-lightbox__caption"></figcaption>
+      </figure>
+      <span class="project-img-lightbox__hint">Clic fuera o Esc para cerrar</span>
+    </div>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -936,6 +1539,49 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+
+    <script>
+    (function () {
+      var root = document.getElementById('project-img-lightbox');
+      if (!root) return;
+      var img = root.querySelector('.project-img-lightbox__img');
+      var cap = root.querySelector('.project-img-lightbox__caption');
+      var btnClose = root.querySelector('.project-img-lightbox__close');
+      function openLightbox(src, alt, caption) {
+        img.src = src;
+        img.alt = alt || '';
+        cap.textContent = caption || '';
+        root.hidden = false;
+        document.body.style.overflow = 'hidden';
+        btnClose.focus();
+      }
+      function closeLightbox() {
+        root.hidden = true;
+        img.removeAttribute('src');
+        img.alt = '';
+        cap.textContent = '';
+        document.body.style.overflow = '';
+      }
+      document.querySelectorAll('.card-gallery-fs').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          openLightbox(
+            btn.getAttribute('data-lightbox-src'),
+            btn.getAttribute('data-lightbox-alt'),
+            btn.getAttribute('data-lightbox-caption')
+          );
+        });
+      });
+      btnClose.addEventListener('click', closeLightbox);
+      root.addEventListener('click', function (e) {
+        if (e.target === root) closeLightbox();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !root.hidden) closeLightbox();
+      });
+    })();
+    </script>
 
 
   </body>

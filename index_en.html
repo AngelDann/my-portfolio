@@ -1497,7 +1497,7 @@
         <div class="my-auto">
           <h2 class="mb-5">Certifications and Courses</h2>
           <div class="badges-section">
-            <h3>Amazon Educate Badges</h3>
+            <h3>Badges</h3>
             <ul class="badges-list">
               <li>
                 <a href="https://www.credly.com/badges/702d2b82-015b-4ee8-9242-1fa746cb8079/public_url" target="_blank" rel="noopener noreferrer">
@@ -1519,6 +1519,11 @@
                   <img src="img/getttingstartetdatabases.png" alt="Getting Started with Databases Badge" title="Getting Started with Databases">
                 </a>
               </li>
+              <li>
+                <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=5C987217F772E07DB22D18BA846A80B20039CE2F11E3258821A4AEF00F5828A6" target="_blank" rel="noopener noreferrer">
+                  <img src="img/oracle-badge.png" alt="Oracle Certification Badge" title="Oracle Certification">
+                </a>
+              </li>
             </ul>
             
           </div>
@@ -1534,20 +1539,30 @@
               padding: 0;
               display: flex;
               justify-content: center;
-              gap: 15px; /* Espacio entre los badges */
+              align-items: center;
+              gap: 15px;
               flex-wrap: wrap;
+            }
+
+            .badges-list li {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 180px;
             }
           
             .badges-list li img {
-              width: 150px; /* Ajusta el tamaño del badge */
-              height: auto;
-              border-radius: 8px; /* Esquinas redondeadas opcionales */
+              width: auto;
+              height: 100%;
+              max-width: 150px;
+              object-fit: contain;
+              border-radius: 8px;
               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
               transition: transform 0.3s ease;
             }
           
             .badges-list li img:hover {
-              transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+              transform: scale(1.1);
             }
           </style>
           
